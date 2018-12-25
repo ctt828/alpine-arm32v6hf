@@ -17,4 +17,5 @@ script:
 # test image
 - docker run ctt828/arm32v6 uname -a
 # push image
-- docker push ctt828/arm32v6 -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+- docker push ctt828/arm32v6
