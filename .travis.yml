@@ -13,9 +13,9 @@ script:
   tar xzf qemu-arm-static.tar.gz &&
   popd
 # build image
-- docker build -t ctt828/arm32v6 .
+- docker build -t ctt828/rpi-arm32v6-alpine .
 # test image
-- docker run ctt828/arm32v6 uname -a
+- docker run ctt828/rpi-arm32v6-alpine uname -a
 # push image
 - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-- docker push ctt828/arm32v6
+- docker push ctt828/rpi-arm32v6-alpine
