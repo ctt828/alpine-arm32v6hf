@@ -18,7 +18,7 @@ script:
 - docker run ctt828/rpi-arm32v6-alpine uname -a
 # push image
 - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-- docker push ctt828/rpi-arm32v6-alpine
+- docker push ctt828/rpi-arm32v6hf-alpine
 notifications:
   slack:
     secure: dJ8PQ/5ayWspvHgOqoVsP1dO73+et1LA5GNKtHjrl+4ztpLnheSkuGpb9QQvSBbkXVu9NsaWuV0Wz5eUm3irf3rtCcPfBADJ5weEE6Bv4eLlzYcNPb311d7eEJLC56+10RT4/9mPHPVhbpvsZyNrpFYjj/Bga2lN+Vxx6gGru7nFc9lJtH/zcZZPKfxzkUJkNbj3Dcr4v1ZVdWYpGbz4Q6sAUZqTQ3zxebNEiYhcckEJ66rzwUBRuhNAQ23pD6pownFfD3qJIS9czvtZCRaak0OZm4yL/c9GSTNRjoehQITd/nkYYsRjMDc98J8qUQpiWzoqPZY/YYk3HLaKRHy26ceDN/t5qp+Ov1F7U/+QAIMCJIRxZwheqkIpIshG9YbuuPQlPDqvW7utE8QvfO25kvvdQupMgVGW2+nuMtUolDsMGuRWeOOaJgY1h6jeTQFn7/ROyO6JF/qYSirm1yhMLod4XgBQAX3oXZfvzRiFmB6MzvhBYH4KYWz/4EOcbpLFAUthHA2SqTu0KigQICyJGCDDTPV1+7KooZjfTZLPtIfyYFGHhLIHzSMfOP7TytBQwDY261wwUTDZ7e2xYw5B3EozvbF20SZ14VhNC5lS2RxvbZvL4I2lPjnR+FcQXfD+2dXzCMmCw30toPAxRl3lUZAb4deoRy2hvV8GuLrzMqU=
